@@ -21,6 +21,7 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+
 	</head>
 	<body>
 		<div class="reveal">
@@ -32,13 +33,9 @@
 					<section>
 						<h2>Project Structure</h2>
 						<!--todo: should add a better diagram here-->
-						<p>WET-BOEW<br />
-							/	\<br />
-							GCWeb	GCIntanet<br />
-							\	/<br />
-							CDTS<br />
-							/	\<br />
-							DotNetTemplates	JavaTemplates</p>
+						<div id="structure-diagram" style="width:400px; height:280px; margin:auto"></div>
+					</section>
+					<section>
 						<p><a href="https://cenw-wscoe.github.io/sgdc-cdts/docs/index-en.html#Current_CDTS_supported_versions" target="_blank">Supported versions mapping</a></p>
 					</section>
 				</section>
@@ -60,7 +57,9 @@
 			</div>
 		</div>
 
+		<script src="https://unpkg.com/gojs/release/go.js"></script>
 		<script src="js/reveal.js"></script>
+		<script src="js/structure-diagram.js"></script>
 
 		<script>
 			// More info about config & dependencies:
