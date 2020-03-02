@@ -10,6 +10,16 @@
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/serif.css">
 
+		<style>
+			.flex-container{
+				display: flex;
+			}
+
+			.col{
+				flex: 1;
+			}
+		</style>
+
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
 
@@ -36,6 +46,7 @@
 						<div id="structure-diagram" style="width:400px; height:280px; margin:auto"></div>
 					</section>
 					<section>
+						<img alt="dependency mapping CDTS versions" src="./assets/versions.jpg" />
 						<p><a href="https://cenw-wscoe.github.io/sgdc-cdts/docs/index-en.html#Current_CDTS_supported_versions" target="_blank">Supported versions mapping</a></p>
 					</section>
 				</section>
@@ -86,7 +97,29 @@
 							Splash<br />
 							*<em>LeftMenu variant</em>
 						</p>
-					</section>
+					</section>			
+					<section>
+						<h3>Supported frameworks</h3>
+						<div class="flex-container">
+							<div class="col">
+								<p>DotNetTemplates</p>
+								<ul>
+									<li>.NET Framework (4.6.1) - MVC</li>
+									<li>.NET Framework (4.6.1) - WebForms</li>
+									<li>.NET Core (2.1 & 3.0) - MVC</li>
+								</ul>
+							</div>
+							<div class="col">
+								<p>Java Templates (Java 8+)</p>
+								<ul>
+									<li>Struts 2 MVC</li>
+									<li>JSF</li>
+									<li>Spring Boot</li>
+								</ul>
+							</div>
+						</div>
+						<p>Built and Released with hierarchy, you can add your own sub components if we don't provide it.</p>
+					</section>	
 				</section>
 				<section>
 					<h2>.NET Demo</h2>
